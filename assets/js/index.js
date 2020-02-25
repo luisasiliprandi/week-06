@@ -14,7 +14,30 @@ function addOneToNumber() {
 }
 
 function updateMessage() {
-    message.innerText = "Way to go!";
+
+    if (counter >= 10) {
+        message.innerText = "Way to go!";
+
+    }
+
+    if (counter >= 20) {
+        message.innerText = "Wooop.";
+    }
+
+    if (counter >= 30) {
+        message.innerText = "Yayy!";
+    }
+
+    if (counter >= 40)
+        message.innerText = "Nice job!";
+
+    if (counter >= 50) {
+        message.innerText = "You are awesome!";
+    }
+
+    if (counter >= 60) {
+        message.innerText = "You got this!";
+    }
 }
 
 button.addEventListener("click", addOneToNumber);
